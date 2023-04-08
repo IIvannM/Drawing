@@ -1,0 +1,18 @@
+﻿<Window x:Class="Drawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+
+        <Canvas x:Name="canvas" Background="White" MouseMove="Canvas_MouseMove" MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp" MouseLeave="Сanvas_MouseLeave">
+        </Canvas>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="800" Margin="0,436,0,0">
+            <Button x:Name="Check" Content="Check inverted eight" Click="Check_Click" Margin="10,0,0,0"/>
+            <Button x:Name="Clear" Content="Clear" Click="Clear_Click" Margin="10,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
